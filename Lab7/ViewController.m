@@ -31,6 +31,21 @@
 - (void)updatecalculationView {
     [_calculationView setText:[_Cbrain calculationString]];
 }
+//New func below
+
+- (IBAction)NewFuncIsSquare:(id)sender {
+    [_Cbrain SquareCalculationString];
+    [self updatecalculationView];
+    
+    
+}
+
+
+
+
+//New func above
+
+
 
 - (IBAction)numberPressed:(id)sender {
     UIButton *pressedButton = (UIButton *)sender;
